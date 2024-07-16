@@ -28,7 +28,7 @@ def main():
     min_exploration_factor = 0.2
     # First we explore a lot and over time we explore exponentially less and less
     decay_rate = 1e-4
-    
+
     print("--- Training ---")
     for e in tqdm(range(10000)):  # Steps of the simulation
         current_state, _ = env.reset()  # Reset the environment

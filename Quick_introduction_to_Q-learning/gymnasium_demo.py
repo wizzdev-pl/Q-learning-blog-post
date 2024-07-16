@@ -16,7 +16,8 @@ def main():
     for _ in range(1000):  # Steps of the simulation
         action = env.action_space.sample()  # Choose action (here: sample/random action)
         env.render()  # Render GUI
-        observation, reward, done, tr, info = env.step(action)  # Execute the action
+        observation, reward, done, tr, info = env.step(
+            action)  # Execute the action
         if done:
             env.reset()
     env.close()  # Close the environment

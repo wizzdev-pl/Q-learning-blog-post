@@ -1,3 +1,11 @@
+"""
+File: replay_memory.py
+Author: Milosz Gajewski
+Company: WizzDev P.S.A.
+Date: 07.2024
+Description: Memory replay functionality.
+"""
+
 from collections import deque
 import random
 

@@ -1,3 +1,11 @@
+"""
+File: nn_model.py
+Author: Milosz Gajewski
+Company: WizzDev P.S.A.
+Date: 07.2024
+Description: Neural network model implementation for Deep Q-learning.
+"""
+
 import torch
 from torch import nn
 

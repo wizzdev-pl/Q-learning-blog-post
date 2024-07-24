@@ -1,3 +1,11 @@
+"""
+File: cliff_walking_dqn.py
+Author: Milosz Gajewski
+Company: WizzDev P.S.A.
+Date: 07.2024
+Description: Deep Q-learning implementation form CliffWalking Gymnasim environment.
+"""
+
 import random
 from typing import List, Union
 
@@ -79,7 +87,7 @@ class CliffWalkingDQN:
 
                 # Process reward and observations
                 terminated, reward = self._process_epizode(action_reward, new_state)
-                
+
                 # Save experience into memory
                 memory.append((state, action, new_state, reward, terminated))
 
@@ -202,7 +210,7 @@ class CliffWalkingDQN:
                     num_success += 1
                     break
                 if step_count > 50:
-                    # Agent did to many moves 
+                    # Agent did to many moves
                     break
         env.close()
         print(f"Success rate: {num_success / episodes * 100} %")

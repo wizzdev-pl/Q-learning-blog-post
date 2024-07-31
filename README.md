@@ -8,7 +8,8 @@ pip install -r requirements.txt
 ```
 ## Links to posts
 1. [Quick introduction to Q-learning]() 
-2. [Deep Q-learning]() - TBD
+2. [Implementing Q-learning algorithm]() - TBD
+3. [Deep Q-learning]() - TBD
 
 ### Credits
 

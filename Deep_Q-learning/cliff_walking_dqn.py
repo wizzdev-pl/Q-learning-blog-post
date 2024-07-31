@@ -188,13 +188,13 @@ class CliffWalkingDQN:
         policy_dqn.eval()  # switch model to evaluation mode
 
         num_success = 0
+        print("--- Test ---") 
         for _ in tqdm(range(episodes)):
             state = env.reset()[0]  # Initialize to state 0
             terminated = False
             truncated = False
 
             step_count = 0
-            print("--- Test ---")
             while not terminated and not truncated:
                 # Select best action
                 with torch.no_grad():
